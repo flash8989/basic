@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="index.css">
+    <title>We Coders
+    </title>
+</head>
+
+<body>
+    <div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.PNG" alt="" class="logo3 img-fluid"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="project.html">Our Projects</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Topics
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                        <a class="dropdown-item" href="#">Technology</a>
+                        <a class="dropdown-item" href="#">Web Development</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Coding Problems</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html" tabindex="-1" aria-disabled="true">Contact Us</a>
+                </li>
+            </ul>
+       
+            <div class="mx-1">
+                <button type="button" class="btn btn-success" id="login" data-toggle="modal"
+                    data-target="#loginmodal">Login</button>
+                <button type="button" class="btn btn-danger" id="sign_up" data-toggle="modal"
+                    data-target="#signUpmodal">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginmodal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+        aria-labelledby="loginmodal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginmodal">Login in WeCoder</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+
+                        <div class="container">
+                            <form action="/login" class="container form">
+                                <div class="login">
+                                    <h4>
+                                        Enter Your Details
+                                    </h4>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1 abc"><span class="material-icons">
+                                            account_box
+                                        </span></i>UserName</label>
+                                    <input type="" class="form-control fas fa-user" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Enter your user name" name="user">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your User with
+                                        anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1 abc"><span class="material-icons">
+                                            lock
+                                        </span></i>Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Enter your password" name="pass">
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Login</button>
+                                <!-- <button class="btn btn-primary">Sign Up</button> -->
+                                <div class="forgot">
+                                    <p>
+                                        Forgot <span>UserName/Password?</span> <button
+                                            class="btn btn-primary btn2">Forgot</button>
+                                    </p>
+                                </div>
+                                <div class="Create">
+                                    <p>
+                                        Create Your <span>Account->> <span id="xyz"><a href="/signup"
+                                                    style="margin-left: 20px;">sign up</a></span> </span>
+                                    </p>
+
+                                </div>
+                            </form>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- sign up -->
+    <!-- Modal -->
+    <div class="modal fade" id="signUpmodal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+        aria-labelledby="signUpmodalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signUpmodalLabel">Enter your Detail</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4"><img
+                                        src="https://img.icons8.com/material-sharp/24/000000/email-open.png" />Email</label>
+                                <input type="email" class="form-control" id="inputEmail4"
+                                    placeholder="Enter your Email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4"> <img
+                                        src="https://img.icons8.com/metro/26/000000/password.png" />Password</label>
+                                <input type="password" class="form-control" id="inputPassword4"
+                                    placeholder="Enter your password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress"><img
+                                    src="https://img.icons8.com/material-rounded/24/000000/address.png" />Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Enter your Add..">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity"><img
+                                        src="https://img.icons8.com/material/24/000000/building-with-rooftop-terrace.png" />City</label>
+                                <input type="text" class="form-control" id="inputCity" placeholder="Enter your city">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState"><img src="https://img.icons8.com/material/24/000000/region-code.png"/>State</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip" placeholder="Enter code">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12 segment-one md-mb-30 sm-mb-30">
+                        <h3>Divinector</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vitae ea aut. Beatae corrupti voluptates cum autem amet exercitationem dignissimos.
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30">
+                        <h2>Usefull Link</h2>
+                        <ul>
+                            <li><a href="#">Event</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Hosting</a></li>
+                            <li><a href="#">Career</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 segment-three sm-mb-30">
+                        <h2>Follow Us</h2>
+                        <p>Please follow us on our Social media profile in order to keep updated. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, quisquam?
+                        </p>
+                        <a href="#"><i class="fa fa-facebook" id="facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram" id="insta"></i></a>
+                        <a href="#"><i class="fa fa-twitter" id="twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" id="linkedin"></i></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 segment-four sm-mb-30">
+                        <h2>Our Newletter</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis ipsam quia eum magnam dolor perferendis.</p>
+                        <form action="">
+                            <input type="email">
+                            <input type="submit" value="Subscribe" id="btn">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="footer-bottom-text">  All right reserved by &copy;Kathiyawadi CodeClub @2020</p>
+    </footer>
+
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

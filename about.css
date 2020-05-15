@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.photo {
+    height: 300px;
+    width: 300px;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.nav-link:hover{
+    background-color: white;
+    color: black !important;
+    border-radius: 12px;
+    transition: 1s;
+    /* font-weight: bold; */
+}
+.dropdown-item:hover{
+    background-color:black;
+    color: white !important;
+    border-radius: 12px;
+    transition: 1s;
+    
+}
+
+.logo3{
+    height: 35px;
+    width: 115px;
+}
+
+/* footer */
+
+footer p{
+    color: #999;
+    line-height: 25px;
+}
+footer h2 h3{
+    color:#fff;
+}
+footer h2{
+    font-size: 18px;
+}
+.footer-top{
+    background: #111;
+    padding: 80px 0;
+}
+.segment-one h3{
+    font-family: Courgette;
+    color: #fff;
+    letter-spacing: 3px;
+    margin: 10px 0;
+}
+.segment-two h2{
+  color: #fff;
+  font-family: Poppins;
+  text-transform: uppercase;
+}
+
+.segment-two h2::before{
+    content: '|';
+    color: #c65039;
+    padding-right: 10px;
+}
+
+.segment-two ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.segment-two ul li{
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    line-height: 40px;
+}
+.segment-two ul li a{
+   color: #999;
+   text-decoration: none;
+}
+
+.segment-three h2{
+    color: #fff;
+    font-family: Poppins;
+    text-transform: uppercase;
+}
+
+.segment-three h2::before{
+    content: '|';
+    color: #c65039;
+    padding-right: 10px;
+}
+.segment-three a{
+    background: #494848;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.segment-three a i{
+   font-size: 20px;
+   color: #fff;
+   padding: 10px 12px;
+}
+.segment-four h2{
+    color: #fff;
+    font-family: Poppins;
+    text-transform: uppercase;
+}
+.segment-four h2::before{
+    content: '|';
+    color: #c65039;
+    padding-right: 10px;
+}
+.segment-four form input[type=submit]{
+    background: #c65039;
+    border: none;
+    padding: 3px 15px;
+    margin-left: 0px;
+    margin-top: 15px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.footer-bottom-text{
+    text-align: center;
+    background: #000;
+    line-height: 75px;
+}
+footer .fa:hover{
+    color: blue;
+}
+#btn:hover{
+    background-color: blue;
+    border-radius: 12px;
+    transition: 1s;
+}
+
+/* responsiv css */
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .md-mb-30{
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .sm-mb-30{
+        margin-bottom: 30px;
+    }
+    .footer-top{
+        padding: 50px 0;
+    }
+}
