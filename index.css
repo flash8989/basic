@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -144,6 +147,12 @@ footer .fa:hover{
     border-radius: 12px;
     transition: 1s;
 }
+
+.carousel-inner{
+    font-family: 'Bai Jamjuree', sans-serif;;
+}
+
+
 
 /* responsiv css */
 
